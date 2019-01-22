@@ -111,12 +111,12 @@ img{
 .banner-content{
     position: absolute;
     color: rgb(242, 242, 242);
-    font-size: 55px;
+    font-size: 40px;
     padding: 0;
     margin: 0;
     text-align: center;
-    height: 65px;
-    line-height: 65px;
+    height: 45px;
+    line-height: 45px;
     overflow: hidden;
     font-weight: 500;
 }
@@ -125,7 +125,7 @@ img{
     list-style: none;
     margin: 0;
     padding-left: 0;
-    animation: change 5s infinite normal ease-in-out;
+    animation: change0 5s infinite normal ease-in-out;
 }
 
 /* ------------------ Main Styles ------------------ */
@@ -262,9 +262,9 @@ img{
     text-decoration: none;
     width: 200px;
     background: #FF5733;
-    font-size: 30px;
+    font-size: 40px;
     color: white;
-    padding: 7px;
+    padding: 10px;
     margin: 40px auto;
 }
 .column-50b{
@@ -316,7 +316,17 @@ img{
     }
 }
 
-@keyframes change {
+@keyframes change0 {
+    0%{margin-top: 0}
+    25%{margin-top: 0}
+    33%{margin-top: -45px}
+    58%{margin-top: -45px}
+    66%{margin-top: -90px}
+    92%{margin-top: -90px}
+    100%{margin-top: 0}
+}
+
+@keyframes change1 {
     0%{margin-top: 0}
     25%{margin-top: 0}
     33%{margin-top: -65px}
@@ -487,6 +497,16 @@ img{
     }
     .column-50b{
         width: 49%;
+    }
+
+    .banner-content{
+        font-size: 55px;
+        height: 65px;
+        line-height: 65px;
+    }
+
+    .banner-content ul{
+        animation: change1 5s infinite normal ease-in-out;
     }
 }
 
